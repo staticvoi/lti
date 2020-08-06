@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="myscripts.js"></script>
+</head>
+<body>
+
+<h2>Form</h2>
+
+<p id="demo" style="color:red;"></p>
+
+<form name="myform" action="process.php" method="post" onsubmit="return submitForm(this.form)">
+  <label for="name">Username:</label>
+  <input type="text" name="uname" id="uname" required><br> 
+  <label for="pwd">Password: </label>
+  <input type="password" name="pass" id="pass" required><br><br>
+  <input type="checkbox" id="rememberme" name="rememberme" value="remember">
+  <label for="rememberme"> Remember Me</label><br><br>
+  <input type="submit" value="Submit" onclick="validateform()">
+</form> 
+
+
+</body>
+</html>
