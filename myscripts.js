@@ -4,14 +4,14 @@ function Encrypt(data)
  }
  function submitForm(form)
  {
-  var name=document.myform.name.value;  
-  var password=document.myform.pwd.value;  
+  var name=document.myform.uname.value;  
+  var password=document.myform.pass.value;  
   
-  if (name==null || name==""){  
+  if (uname==null || uname==""){  
     document.getElementById("demo").innerHTML ="Name can't be blank";  
     return false;  
   }
-  else if (name!="LTI" || name!="lti"){  
+  else if (uname!="LTI" || uname!="lti"){  
     document.getElementById("demo").innerHTML ="Username is incorrect";  
     return false;  
   }
@@ -20,7 +20,7 @@ function Encrypt(data)
     return false;  
   }  
 
-  else if(name=="lti"||name=="LTI"){
+  else if(uname=="lti"|| uname=="LTI"){
     <a href="welcome.html"></a>
   }  
 
